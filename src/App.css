@@ -1,3 +1,314 @@
+/* styles/App.css */
+
+.app {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.constructor-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.constructor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.constructor-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.menu-button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.menu-button:hover {
+  background: #0056b3;
+}
+
+.constructor-content {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.ingredients-section {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+.ingredients-title {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ingredient-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.ingredient-button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  flex: 1;
+}
+
+.ingredient-button:hover {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+.ingredient-image-placeholder {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e0e0;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  font-weight: bold;
+  font-size: 18px;
+  color: #666;
+}
+
+.ingredient-image {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid #ddd;
+}
+
+.ingredient-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.ingredient-count {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 15px;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.remove-button:hover:not(:disabled) {
+  background: #ffe6e6;
+}
+
+.remove-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.burger-section {
+  flex: 1;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #333;
+}
+
+.burger-container h2 {
+  margin: 0 0 20px 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Стили для бургера */
+.burger {
+  width: 100%;
+  margin: auto;
+  height: auto;
+  overflow: auto;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.burger-ingredient {
+  width: 80%;
+  margin: 2px auto;
+  border-radius: 5px;
+  padding: 0.5rem;
+  position: relative;
+}
+
+.burger-bread-top {
+  background: linear-gradient(#bc581e, #e27d00);
+  height: 20%;
+  border-radius: 50px 50px 0 0;
+  box-shadow: inset -15px 0 #c15711;
+  margin: 2% auto;
+  position: relative;
+}
+
+.burger-bread-bottom {
+  background: linear-gradient(#f4d004, #d6bb22);
+  height: 13%;
+  border-radius: 0 0 30px 30px;
+  box-shadow: inset -15px 0 #c7a917;
+  margin: 2% auto;
+}
+
+.burger-meat {
+  background: linear-gradient(#7f3608, #702e05);
+  margin: 2% auto;
+  height: 8%;
+  color: white;
+}
+
+.burger-cheese {
+  background: linear-gradient(#f4d004, #d6bb22);
+  margin: 2% auto;
+  height: 4.5%;
+}
+
+.burger-bacon {
+  background: linear-gradient(#bf3813, #c45e38);
+  margin: 2% auto;
+  height: 3%;
+  color: white;
+}
+
+.burger-salad {
+  background: linear-gradient(#228b22, #91ce50);
+  margin: 2% auto;
+  height: 7%;
+  color: white;
+}
+
+.seeds {
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  background-color: white;
+  border-radius: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.seeds:nth-child(1) {
+  left: 30%;
+}
+
+.seeds:nth-child(2) {
+  left: 45%;
+}
+
+.seeds:nth-child(3) {
+  left: 60%;
+}
+
+.seeds:nth-child(4) {
+  left: 75%;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+  background: #e8f5e8;
+  border-radius: 5px;
+}
+
+/* Стили для формы */
+.burger-form {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.save-button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.save-/* styles/App.css */
 
 .app {
   display: flex;
@@ -105,6 +416,7 @@
   font-weight: bold;
 }
 
+/* Стили для бургера (адаптированы из предоставленной ссылки) */
 .burger {
   width: 100%;
   margin: auto;
