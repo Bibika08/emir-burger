@@ -1,3 +1,4 @@
+
 import React from 'react';
 import type { Ingredient } from '../types/ingredient';
 
@@ -20,11 +21,9 @@ const IngredientItem: React.FC<IngredientItemProps> = ({
         className="ingredient-button"
         onClick={onAdd}
       >
-        <img 
-          src={ingredient.image} 
-          alt={ingredient.name}
-          className="ingredient-image"
-        />
+        <div className="ingredient-image-placeholder">
+          {ingredient.name.charAt(0)}
+        </div>
         <span className="ingredient-name">{ingredient.name}</span>
       </button>
       

@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import type { BurgerIngredient } from '../types/ingredient';
 
